@@ -24,8 +24,15 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
+/*div.dancer{
   border:10px solid blue;
   border-radius:10px;
   position:absolute;
-}
+}*/
+
+div.dancer {
+   content:url('http://pixel.nymag.com/imgs/daily/vulture/2013/04/29/29-kit-harington-silo.w245.h368.png');
+   width:100px;
+   height:200px;
+   position: absolute;
+}​
