@@ -3,7 +3,9 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url("https://wallpapercave.com/wp/NoqcEgG.jpg");
+  background-size: cover;
+  background-position: center center;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -16,12 +18,14 @@ body, a:link, a:visited, a:active{
 .topbar{
   height:32px;
   background-color: #555;
+  position: fixed;
+  top: 0;
 }
 .title{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid blue;
   border-radius:10px;
   position:absolute;
 }
