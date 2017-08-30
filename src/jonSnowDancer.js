@@ -1,16 +1,18 @@
 
 var makeJonSnowShiftingDancer = function(top, left, timeBetweenSteps) {
-
+console.log('jon snow dancer made: ' + JSON.stringify(this));
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<div class="jonSnowShiftingDancer"></div>');
+
+  this.$node.removeClass('dancer').addClass('JonSnow');
+  //this.setPosition(top, left);
   this.step();
 
 };
 
-makeShiftingDancer.prototype = Object.create(makeDancer.prototype);
-makeShiftingDancer.prototype.constructor = makeShiftingDancer;
+makeJonSnowShiftingDancer.prototype = Object.create(makeDancer.prototype);
+makeJonSnowShiftingDancer.prototype.constructor = makeJonSnowShiftingDancer;
 
-makeShiftingDancer.prototype.step = function() {
+makeJonSnowShiftingDancer.prototype.step = function() {
 
   // call the old version of step at the beginning of any call to this new version of step
   makeDancer.prototype.step.call(this);
@@ -25,4 +27,14 @@ makeShiftingDancer.prototype.step = function() {
     'left' : '-=30px'
   });
 
+};
+makeJonSnowShiftingDancer.prototype.setPosition() = function(top, left) {
+  // Use css top and left properties to position our <span> tag
+  // where it belongs on the page. See http://api.jquery.com/css/
+  // var styleSettings = {
+  //   top: top,
+  //   left: left
+  // };
+  // this.$node.css(styleSettings);
+  //makeDancer.prototype.setPosition.call(this);
 };

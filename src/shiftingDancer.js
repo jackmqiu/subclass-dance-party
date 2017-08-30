@@ -1,6 +1,6 @@
 
 var makeShiftingDancer = function(top, left, timeBetweenSteps) {
-
+  console.log('shifting dancer made: ' + JSON.stringify(this));
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.step();
 

@@ -30,8 +30,22 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }*/
 
-div.dancer {
-   content:url('http://pixel.nymag.com/imgs/daily/vulture/2013/04/29/29-kit-harington-silo.w245.h368.png');
+.dancer {
+   content: url('images/Game-of-Thrones-Nights-King-Mask.png');
+   width:100px;
+   height:200px;
+   position: absolute;
+}​
+
+.Margaery {
+   content:url('images/22-natlaie-dormer-margaery-silo.w245.h368.png');
+   width:100px;
+   height:200px;
+   position: absolute;
+}​
+
+.JonSnow {
+   content:url('images/29-kit-harington-silo.w245.h368.png');
    width:100px;
    height:200px;
    position: absolute;
