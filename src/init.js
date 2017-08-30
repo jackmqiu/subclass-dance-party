@@ -38,6 +38,13 @@ $(document).ready(function() {
     };
   });
 
+$( "body" ).mouseover(function() {
+  for (var i = 0; i < window.dancers.length ; i++){
+  console.log('loops through dancers: count : ' + i);
+  window.dancers[i].$node.toggle();
+};
+});
+
 
 
 

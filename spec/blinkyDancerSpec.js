@@ -1,4 +1,4 @@
-describe('blinkyDancer', function() {
+describe('blinkyDancer and shiftingDancer', function() {
 
   var blinkyDancer, clock;
   var timeBetweenSteps = 100;
@@ -6,6 +6,17 @@ describe('blinkyDancer', function() {
   beforeEach(function() {
     clock = sinon.useFakeTimers();
     blinkyDancer = new makeBlinkyDancer(10, 20, timeBetweenSteps);
+    shiftingDancer = new makeShiftingDancer(10, 20, timeBetweenSteps);
+  });
+
+  it('shiftingDancer should have a jQuery $node object', function() {
+    expect(shiftingDancer.$node).to.be.an.instanceof(jQuery);
+  });
+
+  it('shiftingDancer should have a step function that makes its node move', function() {
+    sinon.spy(shiftingDancer.$node, 'animate');
+    shiftingDancer.step();
+    expect(shiftingDancer.$node.animate.called).to.be.true;
   });
 
   it('should have a jQuery $node object', function() {
