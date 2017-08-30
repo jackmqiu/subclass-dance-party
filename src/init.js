@@ -28,5 +28,23 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);//add dancers to window.dancers
   });
+
+  $('.interactButton').on('click', function(event) {
+    for (var i = 0; i < window.dancers.length - 1; i+=2){
+      console.log('loops through dancers: count : ' + i);
+      window.dancers[i].setPosition(window.dancers[i+1].top + 50, window.dancers[i+1].left + 50);
+    };
+  });
+
+
+
+
+
+
+
+
+
+  //
 });

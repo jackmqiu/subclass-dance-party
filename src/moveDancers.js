@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  window.dancers = [];
+  //window.dancers = [];
 
 
 
@@ -7,11 +7,12 @@ $(document).ready(function() {
 
 
 
-$('.lineUpButton').on('click', function(event) {
-      alert('hi');
-    $('.dancer').slideToggle();
+  $('.lineUpButton').on('click', function(event) {
+
+    $('.dancer').animate({left: "30"}, 500)
   });
 
+  
 
 
 });
